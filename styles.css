@@ -1,0 +1,146 @@
+:root {
+ --bright-orange: hsl(31, 77%, 52%);
+ --dark-cyan: hsl(184, 100%, 22%);
+ --very-dark-cyan: hsl(179, 100%, 13%);
+ --paragraph-color: hsla(0, 0%, 100%, 0.75);
+ --heading-color: hsl(0, 0%, 100%);
+ --bg-heading-btns: hsl(0, 0%, 95%);
+ --heading-font:'Big Shoulders Display', cursive;
+ --paragraph-font: 'Lexend Deca', sans-serif;
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.main {
+ display: flex;
+ width: 600px;
+ min-width: 600px;
+ margin: auto;
+}
+
+.sedans {
+ padding: 20px 35px 20px 30px;
+ background-color: var(--bright-orange);
+ border-radius: 10px 0 0 10px;
+}
+
+.sedans > img {
+ margin: 0 0 15px 0;
+}
+
+.sedans > h1 {
+ color: var(--heading-color);
+ font-family: var(--heading-font);
+ margin: 0 0 20px 0;
+}
+
+.sedans > p {
+ color: var(--paragraph-color);
+ font-family: var(--paragraph-font);
+ font-size: small;
+ margin: 0 0 50px 0;
+}
+
+.sedans > button {
+ margin: 4px 0 10px 0;
+ border-radius: 30px;
+ padding: 10px 20px;
+ border: none;
+ color: var(--bright-orange);
+ transition: .5s ease;
+}
+
+.suvs {
+ padding: 20px 35px 20px 30px;
+ background-color: var(--dark-cyan);
+}
+
+.suvs > img {
+ margin: 0 0 15px 0;
+}
+
+.suvs > h1 {
+ color: var(--heading-color);
+ font-family: var(--heading-font);
+ margin: 0 0 20px 0;
+}
+
+.suvs > p {
+ color: var(--paragraph-color);
+ font-family: var(--paragraph-font);
+ font-size: small;
+ margin: 0 0 50px 0;
+}
+
+.suvs > button {
+ margin: 4px 0 10px 0;
+ border-radius: 30px;
+ padding: 10px 20px;
+ border: none;
+ color: var(--dark-cyan);
+ transition: .5s ease;
+}
+
+.luxury {
+ padding: 20px 35px 20px 30px;
+ background-color: var(--very-dark-cyan);
+ border-radius: 0 10px 10px 0;
+}
+
+.luxury > img {
+ margin: 0 0 15px 0;
+}
+
+.luxury > h1 {
+ color: var(--heading-color);
+ font-family: var(--heading-font);
+ margin: 0 0 20px 0;
+}
+
+.luxury > p {
+ color: var(--paragraph-color);
+ font-family: var(--paragraph-font);
+ font-size: small;
+ margin: 0 0 50px 0;
+}
+
+.luxury > button {
+ margin: 4px 0 10px 0;
+ border-radius: 30px;
+ padding: 10px 20px;
+ border: none;
+ color: var(--very-dark-cyan);
+ transition: .5s ease;
+}
+
+.sedans > button:hover {
+ color:var(--paragraph-color);
+ background-color: var(--bright-orange);
+ border: 1px solid var(--paragraph-color);
+ border-radius: 30px;
+}
+
+.suvs > button:hover {
+ color:var(--paragraph-color);
+ background-color: var(--dark-cyan);
+ border: 1px solid var(--paragraph-color);
+ border-radius: 30px;
+}
+
+.luxury > button:hover {
+ color:var(--paragraph-color);
+ background-color: var(--very-dark-cyan);
+ border: 1px solid var(--paragraph-color);
+ border-radius: 30px;
+}
